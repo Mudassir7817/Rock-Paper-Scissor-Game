@@ -1,0 +1,287 @@
+body {
+    font-family: sans-serif;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+/* ============================================
+            First Start Page Styling:
+============================================ */
+
+.start_main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    /* display: none; */
+}
+
+.start_div {
+    height: 550px;
+    width: 650px;
+    padding: 5px;
+    border-radius: 50px;
+    color: rgb(32, 32, 32);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#start_upper_div img {
+    width: 300px;
+}
+
+#start_upper_div h2 {
+    text-align: center;
+    margin: 0;
+}
+
+#start_upper_div h3 {
+    text-align: center;
+}
+
+#start_upper_div button {
+    width: 300px;
+    height: 48px;
+    border-radius: 50px;
+    border: none;
+    background-color: rgb(250, 208, 0);
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all .3s ease-out;
+    margin-top: 20px;
+}
+
+#start_upper_div button:hover {
+    transform: scale(1.03);
+    background-color: rgb(250, 195, 0);
+    box-shadow: 1px 2px 6px 1px rgb(134, 134, 134);
+}
+
+#start_upper_div span {
+    text-align: center;
+    color: grey;
+    cursor: pointer;
+    display: block;
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+#instructions_div {
+    display: none;
+    height: 300px;
+    margin: auto;
+}
+
+#instructions_div h1 {
+    text-align: center;
+}
+
+#instructions_div #btn {
+    height: 40px;
+    width: 100px;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: all .2s ease-out;
+    margin: 0 15px;
+    font-size: 15px;
+    background-color: rgb(0, 153, 255);
+    color: white;
+    border: none !important;
+}
+
+#instructions_div #btn:hover {
+    background-color: rgb(0, 134, 223);
+}
+
+/* ============================================
+            Main Page Styling:
+============================================ */
+
+.main_div_before {
+    width: 100%;
+}
+
+.main_div_before::before {
+    content: '';
+    background-color: rgba(0, 0, 0, 0.2);
+    position: absolute;
+    top: 0;
+    height: 100vh;
+    width: 100%;
+    z-index: 1;
+}
+
+#main_div {
+    display: flex;
+}
+
+.dashboard {
+    display: flex;
+    width: 90%;
+    margin: auto;
+    /* height: 400px; */
+    display: none;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.dashboard_main .upper_div {
+    background-color: rgb(247, 230, 0);
+    border-radius: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 20px;
+    box-shadow: 1px 2px 5px 1px grey;
+    width: 100%;
+    height: 110px;
+}
+
+.dashboard_main .upper_div div{
+    min-width: 100px;
+}
+
+.btns {
+    height: 40px;
+    width: 100px;
+    border: none;
+    background-color: rgb(226, 226, 226);
+    cursor: pointer;
+    border-radius: 10px;
+    transition: all .2s ease-out;
+}
+
+.btns:hover {
+    background-color: rgb(207, 207, 207);
+}
+
+#restart_btn {
+    margin-left: 36%;
+}
+
+#popup_div {
+    border: none;
+    box-shadow: 1px 1px 5px 1px grey;
+    height: 140px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+    display: none;
+    position: fixed;
+    z-index: 1000;
+}
+
+#popup_div h2 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+#popup_div button {
+    height: 40px;
+    width: 100px;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: all .2s ease-out;
+    border: 1px solid rgb(150, 150, 150);
+    margin: 0 15px;
+    font-size: 15px;
+}
+
+.cancel {
+    background-color: white;
+    border: 1px solid black;
+}
+
+.cancel:hover {
+    background-color: rgb(238, 238, 238);
+}
+
+.okBtn {
+    background-color: rgb(0, 153, 255);
+    color: white;
+    border: none !important;
+}
+
+.okBtn:hover {
+    background-color: rgb(0, 134, 223);
+}
+
+.dashboard_main {
+    width: 80%;
+    margin-top: 50px;
+}
+
+.options_div {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    width: 50%;
+    margin: auto;
+    margin-top: 50px;
+}
+
+.options_div div {
+    text-align: center;
+}
+
+.player_2 {
+    display: flex; 
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    width: 50%;
+    margin: auto;
+    display: none;
+    margin-top: 50px;
+}
+
+.player_2 h3 {
+    text-align: center;
+}
+
+.same {
+    width: 120px;
+    box-shadow: 1px 1px 5px 1px grey;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+    transition: all .2s ease-out;
+    cursor: pointer;
+    border: 2px solid rgb(114, 114, 114);
+}
+
+.transformIs:hover {
+    transform: scale(1.1);
+}
+
+.transform {
+    transform: scale(1.1);
+    border: 2px solid rgb(39, 39, 39) !important;
+    box-shadow: 1px 1px 5px 1px grey;
+    cursor: none;
+}
+
+#suggestion {
+    width: 270px;
+    text-align: center;
+}
+
+.rock_icon {
+    font-size: 32px;
+}
+
+#play_again_sug {
+    display: none;
+}

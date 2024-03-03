@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <title>Game</title>
+</head>
+
+<body>
+    <div class="start_main">
+
+        <div class="start_div">
+
+            <div id="start_upper_div">
+                <img src="Images/Rock Paper Scissors game design.jpeg" />
+                <h2>Let's Play</h2>
+                <h3>Rock, Paper, Scissor</h3>
+                <h3>Are you Ready?</h3>
+                <h4 style="margin: 0; padding: 0; text-align: center; color: rgb(0, 116, 211);">Let's go!
+                </h4>
+                <button id="start_btn">Start</button>
+                <span id="instructions">See the Instruction?</span>
+            </div>
+
+            <div id="instructions_div">
+                <h1>INSTRUCTION:</h1>
+                <h3>1: Player Selection: First, you choose either rock, paper, or scissors.</h3>
+                <h3>2: Computer's Turn: Second, the computer randomly selects rock, paper, or scissors.</h3>
+                <h3>3: Determine the winner based on classic rules: rock crushes scissors, scissors cuts paper, paper covers rock.</h3>
+                <button id="btn"><i class="fa-solid fa-angle-left"></i> Back</button>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div id="main_div">
+        <div class="dashboard">
+
+            <div class="dashboard_main">
+
+                <button id="quit_btn" class="btns" popovertarget="popup_div">Quit Game</button>
+                <button id="restart_btn" class="btns">Play Again</button>
+
+                <div popover id="popup_div">
+                    <h2>Do you want to Quit?</h2>
+                    <div style="margin-left: 17px;">
+                        <button class="cancel">Cancel</button>
+                        <button class="okBtn">OK</button>
+                    </div>
+                </div>
+
+                <div class="upper_div">
+                    <div class="your_scores">
+                        <h3>You</h3>
+                        <p>Scores: <span id="you_scores">0</span></p>
+                    </div>
+                    <div style="width: 27%;">
+                        <h2 id="suggestion" style="text-align: center; width: 100%;">Make your move!</h2>
+                        <h4 id="play_again_sug">To play again click on Play Again button!</h4>
+                    </div>
+                    <div class="player2_scores">
+                        <h3>Computer</h3>
+                        <p>Scores: <span id="computer_scores">0</span></p>
+                    </div>
+                </div>
+
+                <div class="options_div">
+
+                    <div>
+                        <img class="same transformIs options" id="rock" src="Images/rock.jpg">
+                        <h3>Rock</h3>
+                    </div>
+                    <div>
+                        <img class="same transformIs options" id="paper" src="Images/paper.jpg">
+                        <h3>Paper</h3>
+                    </div>
+                    <div>
+                        <img class="same transformIs options" id="scissor" src="Images/scissors.jpg">
+                        <h3>Scissors</h3>
+                    </div>
+
+                </div>
+
+                <div class="player_2">
+
+                    <div>
+                        <img id="option_1" class="same rock" style="cursor: not-allowed;" src="Images/rock.jpg">
+                        <h3>Rock</h3>
+                    </div>
+                    <div>
+                        <img id="option_2" class="same scissor" style="cursor: not-allowed;" src="Images/paper.jpg">
+                        <h3>Paper</h3>
+                    </div>
+                    <div>
+                        <img id="option_3" class="same paper" style="cursor: not-allowed;" src="Images/scissors.jpg">
+                        <h3>Scissors</h3>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
